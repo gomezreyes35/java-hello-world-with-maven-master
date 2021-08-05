@@ -7,7 +7,7 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     for (String name: args) {
-      System.out.println("name: " + name);
+      System.out.println("name Hola: " + name);
       String jsonString = new App(name).getUserInfoJSON();
       JSONObject json = new JSONObject(jsonString);
       System.out.println(json.toString(2));
